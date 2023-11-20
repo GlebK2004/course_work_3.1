@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="634.0" style="-fx-background-color: #df0030;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.course_project.HelloController">
+   <children>
+      <AnchorPane layoutX="8.0" layoutY="6.0" prefHeight="388.0" prefWidth="584.0" style="-fx-background-radius: 8; -fx-background-color: white;" AnchorPane.bottomAnchor="6.7999999999999545" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="8.799999999999955" AnchorPane.topAnchor="6.0">
+         <children>
+            <AnchorPane layoutX="449.0" layoutY="14.0" prefHeight="72.0" prefWidth="120.0" style="-fx-background-color: #df0030; -fx-background-radius: 8;">
+               <children>
+                  <Button alignment="TOP_LEFT" layoutX="12.0" layoutY="28.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Женщины" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="TOP_LEFT" layoutX="91.0" layoutY="-4.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="0" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="319.0" layoutY="14.0" prefHeight="72.0" prefWidth="120.0" style="-fx-background-color: #df0030; -fx-background-radius: 8;">
+               <children>
+                  <Button alignment="TOP_LEFT" layoutX="12.0" layoutY="28.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Мужчины" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="TOP_LEFT" layoutX="91.0" layoutY="-4.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="0" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="189.0" layoutY="14.0" prefHeight="72.0" prefWidth="120.0" style="-fx-background-color: #df0030; -fx-background-radius: 8;">
+               <children>
+                  <Button alignment="TOP_LEFT" layoutX="12.0" layoutY="29.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Студенты" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="TOP_LEFT" layoutX="89.0" layoutY="-4.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="0" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <Line endX="401.99993896484375" endY="192.79998779296875" layoutX="174.0" layoutY="-96.0" startX="6.0000152587890625" startY="192.79998779296875" stroke="#df0030" strokeLineCap="ROUND" strokeWidth="3.0" />
+            <AnchorPane layoutX="189.0" layoutY="105.0" prefHeight="188.0" prefWidth="382.0" style="-fx-background-color: #df0030; -fx-background-radius: 8;">
+               <children>
+                  <BarChart layoutX="-212.0" layoutY="-116.0" prefHeight="172.0" prefWidth="382.0" title="Таблица зачисленных" AnchorPane.bottomAnchor="16.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <xAxis>
+                      <CategoryAxis side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis side="LEFT" />
+                    </yAxis>
+                  </BarChart>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="189.0" layoutY="301.0" prefHeight="80.0" prefWidth="182.0" style="-fx-background-color: #df0030; -fx-background-radius: 8;" />
+            <AnchorPane layoutX="381.0" layoutY="301.0" prefHeight="80.0" prefWidth="182.0" style="-fx-background-color: #df0030; -fx-background-radius: 8;" />
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="400.0" prefWidth="182.0" style="-fx-background-color: #05488d;">
+         <children>
+            <ImageView fitHeight="129.0" fitWidth="151.0" layoutX="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@ULC_logo.png" />
+               </image>
+            </ImageView>
+            <Line endX="179.3999786376953" endY="192.8000030517578" layoutX="-14.0" layoutY="-55.0" startX="31.400005340576172" startY="192.8000030517578" stroke="WHITE" strokeLineCap="ROUND" strokeWidth="3.0" />
+            <Button alignment="TOP_LEFT" layoutX="2.0" layoutY="163.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Главная" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button layoutX="2.0" layoutY="200.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Добавить студентов" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button layoutX="2.0" layoutY="237.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Доступные курсы" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button layoutX="2.0" layoutY="274.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Успеваемость" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button layoutX="14.0" layoutY="360.0" mnemonicParsing="false" style="-fx-background-color: #df0030;" text="Выйти" textFill="#f7f7f7">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
